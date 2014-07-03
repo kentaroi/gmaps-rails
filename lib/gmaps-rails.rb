@@ -1,0 +1,5 @@
+require 'rails'
+require 'gmaps'
+require 'gmaps/rails/railtie'
+require 'gmaps/rails/engine'
+require 'gmaps/rails/version'
