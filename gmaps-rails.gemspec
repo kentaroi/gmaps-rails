@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = GMaps::Rails::VERSION
   spec.authors       = ["Kentaro Imai"]
   spec.email         = ["kentaroi@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{gmaps-rails is a gem which includes GMaps.js and provides an easy way to use it in Rails}
+  spec.description   = %q{gmaps-rails is a gem which includes GMaps.js and provides an easy way to use it in Rails. GMaps.js has over 4,000 stars on Github and you will love to use it with Rails.}
+  spec.homepage      = "https://github.com/kentaroi/gmaps-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
