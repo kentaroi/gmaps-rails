@@ -52,7 +52,7 @@ simply by requiring `gmaps` in `app/assets/javascripts/application.js` file.
 #### GMaps in Ruby
 In addition to that, this gem has helpers.
 
-You can define GMaps object in a controller or a presenter \(such as [Draper](https://github.com/drapergem/draper)\).
+You can define GMaps object in a controller or presenter \(such as [Draper](https://github.com/drapergem/draper)\).
 
 ```ruby
 @map = GMaps.new(div: '#map', lat: -12.043333, lng: -77.028333)
@@ -73,7 +73,7 @@ You can show maps as follows:
 <script>
   jQuery(function() {
     <%= @map.to_js %>
-  }
+  })
 </script>
 <body>
   <div sytle='width: 800px'>
