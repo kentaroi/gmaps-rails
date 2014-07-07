@@ -1,5 +1,5 @@
 (function($, undefined) {
-  $(function() {
+  var gmapsUjs = function() {
     var mapElements = $('[data-map]');
     for (var mi = 0, len = mapElements.length; mi < len; mi++) {
       var mapElement = $(mapElements[mi]);
@@ -11,5 +11,11 @@
         map[d.name].apply(map, d.args);
       }
     }
-  });
+  };
+
+  if ((typeof Turbolinks === 'undefined') || $.turbo) {
+    $(gmapsUjs);
+  } else {
+    $(document).on("page:change", gmapsUjs);
+  }
 })( jQuery );
